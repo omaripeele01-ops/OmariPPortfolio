@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #333333;
-    text-align: left;
+    text-align: right;
 }
 
 header h1 {
