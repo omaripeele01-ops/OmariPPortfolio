@@ -71,10 +71,6 @@ section {
 /* Hero Section with Workspace Image Overlay */
 #hero {
     position: relative;
-}
-
-#hero {
-    position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Assets/images/workspace.jpg') no-repeat center center/cover;
     min-height: 400px;
 }
@@ -118,6 +114,11 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Applied 66.66% width to the entire text column wrapper */
+.bio-text {
+    width: 66.66%;
+}
+
 .bio-text h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
@@ -127,7 +128,6 @@ section {
 
 .bio-text p {
     font-size: 1.1rem;
-    width: 66.66%;
 }
 
 /* Projects Preview Section */
