@@ -19,22 +19,21 @@ body {
     background-color: #121212;
 }
 
-/* Header & Navigation Area */
+/* Header & Navigation Area (Title Left, Nav Right) */
 header {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     color: #ffffff;
     background-color: #000000;
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #333333;
-    text-align: right;
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 0;
 }
 
@@ -54,15 +53,14 @@ nav a:hover {
     color: #00bcd4;
 }
 
-/* Main Layout Sections (Matching Wireframe Blocks) */
+/* Main Layout Sections */
 main {
     display: flex;
     flex-direction: column;
 }
 
 section {
-    padding: 60px 20px;
-    min-height: 150px;
+    padding: 60px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,29 +68,77 @@ section {
     text-align: center;
 }
 
-section h2 {
+/* Hero Section with Workspace Image Overlay */
+#hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg') no-repeat center center/cover;
+    min-height: 400px;
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 1;
+}
+
+#hero h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Bio Section (Blazer Pic Aligned to Left) */
+#bio {
+    background-color: #1e1e1e;
+    text-align: left;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.bio-img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.bio-text h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-section p {
-    max-width: 800px;
+.bio-text p {
     font-size: 1.1rem;
 }
 
-/*  Section Backgrounds Distinction */
-#hero {
-    background-color: #1e1e1e;
-}
-
-#bio {
-    background-color: #262626;
-}
-
+/* Projects Preview Section */
 #projects-preview {
-    background-color: #1e1e1e;
+    background-color: #161616;
+}
+
+#projects-preview h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#projects-preview a {
+    color: #00bcd4;
+    text-decoration: underline;
 }
 
 /* Footer */
