@@ -176,27 +176,25 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    width: 100%;          /* Expands grid to fill full container width */
-    max-width: 100%;       /* Removes cap so it spans wall-to-wall */
+    width: 100%;          
+    max-width: 100%;       
     box-sizing: border-box;
 }
 
 .project-card {
     position: relative;
-    flex: 1;               /* Forces all 3 cards to grow equally across the full width */
-    height: 250px;         /* Slightly taller height for full-width layout */
+    flex: 1;               
+    height: 250px;         
     border-radius: 8px;
     overflow: hidden;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
 /* Dark Gradient Overlay */
