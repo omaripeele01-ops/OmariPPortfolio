@@ -1,0 +1,26 @@
+/*  
+Author: Omari Peele 
+File Name: styles.css
+Date: 11/10/2026
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+header, nav {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #000000;
+}
