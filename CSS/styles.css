@@ -71,7 +71,7 @@ section {
 /* Hero Section with Workspace Image Overlay */
 #hero {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/workspace.jpg') no-repeat center center/cover;
     min-height: 400px;
 }
 
