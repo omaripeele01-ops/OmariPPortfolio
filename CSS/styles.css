@@ -5,7 +5,7 @@ Date: 11/10/2026
 */
 
 /* CSS Reset */
-body, header, nav, main, footer {
+body, header, nav, main, footer, section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,11 +16,90 @@ body {
     font-family: Montserrat, sans-serif;
     line-height: 1.6;
     color: #ffffff;
+    background-color: #121212;
 }
 
-header, nav {
+/* Header & Navigation Area */
+header {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     color: #ffffff;
     background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333333;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Main Layout Sections (Matching Wireframe Blocks) */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section p {
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+/*  Section Backgrounds Distinction */
+#hero {
+    background-color: #1e1e1e;
+}
+
+#bio {
+    background-color: #262626;
+}
+
+#projects-preview {
+    background-color: #1e1e1e;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #333333;
 }
