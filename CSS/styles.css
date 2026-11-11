@@ -159,7 +159,7 @@ section {
 
 /* Projects Preview Grid & Cards */
 #projects-preview {
-    background-color: #161616;
+    background-color: #1e1e1e;
     padding: 60px 40px;
 }
 
@@ -227,15 +227,7 @@ section {
     font-weight: bold;
 }
 
-/* Hover Effects */
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.2);
-}
 
-.project-card:hover img {
-    transform: scale(1.05);
-}
 
 /* Footer */
 footer {
