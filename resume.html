@@ -25,116 +25,56 @@
         </nav>
     </header>
 
-    <main>
-        <section class="resume-section">
+    <main class="resume-wireframe-grid">
+        <!-- Top Left: Resume Title & Intro -->
+        <section class="resume-header-box">
             <h1>Resume</h1>
-            <p>Welcome to my resume page! Here you can view and download my resume in PDF format. Additionally, you can connect with me on LinkedIn to learn more about my professional background and experiences.</p>
-
-            <!-- Resume Actions -->
-            <div class="resume-actions">
-                <a href="Assets/docs/resume.pdf" target="_blank" class="proposal-btn">View Resume (PDF)</a>
-                <a href="Assets/docs/resume.pdf" download class="proposal-btn">Download Resume</a>
-                <a href="https://www.linkedin.com/in/omari-peele" target="_blank" class="proposal-btn">View LinkedIn Profile</a>
-            </div>
+            <p>View or download my full resume in PDF format, or connect with me on LinkedIn to explore my background in visual media, UX/UI, and front-end development.</p>
         </section>
 
-        <!-- Education Section -->
-        <section class="resume-table-section">
+        <!-- Top Right: Download PDF & Actions -->
+        <section class="resume-actions-box">
+            <a href="Assets/docs/resume.pdf" download class="proposal-btn">Download PDF</a>
+            <a href="Assets/docs/resume.pdf" target="_blank" class="proposal-btn secondary-btn">View PDF</a>
+            <a href="https://www.linkedin.com/in/omari-peele" target="_blank" class="proposal-btn secondary-btn">LinkedIn</a>
+        </section>
+
+        <!-- Left Column (Desktop): Job History Table -->
+        <section class="resume-jobs-box">
             <table class="resume-table">
                 <thead>
                     <tr class="table-banner">
-                        <th colspan="4">Education</th>
+                        <th colspan="3">Job History</th>
                     </tr>
                     <tr>
-                        <th scope="col">Degree or Certification</th>
-                        <th scope="col">Institution</th>
-                        <th scope="col">Year</th>
-                        <th scope="col">Major / Subject</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>High School Diploma</td>
-                        <td>Miramar High School</td>
-                        <td>2014</td>
-                        <td>General Education</td>
-                    </tr>
-                    <tr>
-                        <td>Associate of Arts in Digital Media</td>
-                        <td>University of Central Florida</td>
-                        <td>2016</td>
-                        <td>Digital Media</td>
-                    </tr>
-                    <tr>
-                        <td>Bachelor of Arts in Digital Media</td>
-                        <td>University of Central Florida</td>
-                        <td>2020</td>
-                        <td>Digital Media</td>
-                    </tr>
-                    <tr>
-                        <td>Certificate in UX/UI Design</td>
-                        <td>Google via Coursera</td>
-                        <td>2025</td>
-                        <td>UX/UI Design</td>
-                    </tr>
-                    <tr>
-                        <td>Bachelor of Applied Science in Web Development</td>
-                        <td>Broward College</td>
-                        <td>2028</td>
-                        <td>Web Development</td>
-                    </tr>
-                    <tr>
-                        <td>Master of Science in Computer Science</td>
-                        <td>Georgia Institute of Technology</td>
-                        <td>2029</td>
-                        <td>Computer Science</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Job Experience Section -->
-        <section class="resume-table-section">
-            <table class="resume-table">
-                <thead>
-                    <tr class="table-banner">
-                        <th colspan="4">Job Experience</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Job Title</th>
-                        <th scope="col">Company</th>
+                        <th scope="col">Role &amp; Company</th>
                         <th scope="col">Years</th>
-                        <th scope="col">Responsibilities</th>
+                        <th scope="col">Job Duties</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Graphic Designer</td>
-                        <td>Tech Sassy Girlz</td>
+                        <td><strong>Graphic Designer</strong><br><span class="org-sub">Tech Sassy Girlz</span></td>
                         <td>2018 - 2019</td>
                         <td>Design and create visual content for various marketing efforts</td>
                     </tr>
                     <tr>
-                        <td>Graphic Designer</td>
-                        <td>Origin Point Media (Freelance)</td>
+                        <td><strong>Graphic Designer</strong><br><span class="org-sub">Origin Point Media (Freelance)</span></td>
                         <td>2019 - 2024</td>
-                        <td>Design and create visual content for various projects</td>
+                        <td>Design and create visual content for various client projects</td>
                     </tr>
                     <tr>
-                        <td>Media Production Specialist</td>
-                        <td>Miami-Dade College</td>
+                        <td><strong>Media Production Specialist</strong><br><span class="org-sub">Miami-Dade College</span></td>
                         <td>2023 - 2024</td>
                         <td>Design graphics and complete video productions for campus events</td>
                     </tr>
                     <tr>
-                        <td>Graphic Designer</td>
-                        <td>Business X-Press</td>
+                        <td><strong>Graphic Designer</strong><br><span class="org-sub">Business X-Press</span></td>
                         <td>2024 - 2025</td>
                         <td>Design and create visual content for small business clients</td>
                     </tr>
                     <tr>
-                        <td>Front-End Developer</td>
-                        <td>Spotify</td>
+                        <td><strong>Front-End Developer</strong><br><span class="org-sub">Spotify</span></td>
                         <td>2028 - Present</td>
                         <td>Design and develop products to enhance user experience on Spotify's platform</td>
                     </tr>
@@ -142,36 +82,80 @@
             </table>
         </section>
 
-        <!-- References Section -->
-        <section class="resume-table-section">
+        <!-- Top Right Column (Desktop): Education & Certifications Table -->
+        <section class="resume-edu-box">
             <table class="resume-table">
                 <thead>
                     <tr class="table-banner">
-                        <th colspan="4">References</th>
+                        <th colspan="3">Education and Certifications</th>
                     </tr>
                     <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Title</th>
+                        <th scope="col">Degree / Certification</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>High School Diploma</td>
+                        <td>Miramar High School</td>
+                        <td>2014</td>
+                    </tr>
+                    <tr>
+                        <td>A.A. in Digital Media</td>
+                        <td>University of Central Florida</td>
+                        <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td>B.A. in Digital Media</td>
+                        <td>University of Central Florida</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Certificate in UX/UI Design</td>
+                        <td>Google via Coursera</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>B.A.S. in Web Development</td>
+                        <td>Broward College</td>
+                        <td>2028</td>
+                    </tr>
+                    <tr>
+                        <td>M.S. in Computer Science</td>
+                        <td>Georgia Institute of Technology</td>
+                        <td>2029</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bottom Right Column (Desktop): References Table -->
+        <section class="resume-ref-box">
+            <table class="resume-table">
+                <thead>
+                    <tr class="table-banner">
+                        <th colspan="3">References</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Name &amp; Title</th>
                         <th scope="col">Company</th>
                         <th scope="col">Email</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Jane Powell</td>
-                        <td>CEO</td>
+                        <td><strong>Jane Powell</strong><br><span class="org-sub">CEO</span></td>
                         <td>Tech Sassy Girlz</td>
                         <td>jane.powell@techsassygirlz.com</td>
                     </tr>
                     <tr>
-                        <td>Michael Johnson</td>
-                        <td>Manager of Media Production</td>
+                        <td><strong>Michael Johnson</strong><br><span class="org-sub">Manager of Media Production</span></td>
                         <td>Miami-Dade College</td>
                         <td>michael.johnson@miamidade.edu</td>
                     </tr>
                     <tr>
-                        <td>Lloyd Thompson</td>
-                        <td>Director of Marketing</td>
+                        <td><strong>Lloyd Thompson</strong><br><span class="org-sub">Director of Marketing</span></td>
                         <td>Business X-Press</td>
                         <td>lloyd.thompson@businessxpress.com</td>
                     </tr>

@@ -455,6 +455,169 @@ section {
     }
 }
 
+/* Resume Page Wireframe Grid Layout */
+main.resume-wireframe-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    grid-template-areas:
+        "header actions"
+        "jobs   edu"
+        "jobs   ref";
+    gap: 24px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+/* Override global section centering for resume grid cards */
+.resume-wireframe-grid > section {
+    padding: 28px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
+}
+
+/* Grid Area Assignments */
+.resume-header-box {
+    grid-area: header;
+    justify-content: center;
+}
+
+.resume-header-box h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #00bcd4;
+    margin: 0 0 10px 0;
+}
+
+.resume-header-box p {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 0.98rem;
+}
+
+.resume-actions-box {
+    grid-area: actions;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
+}
+
+.secondary-btn:hover {
+    background-color: #00bcd4;
+    color: #000000;
+}
+
+.resume-jobs-box {
+    grid-area: jobs;
+}
+
+.resume-edu-box {
+    grid-area: edu;
+}
+
+.resume-ref-box {
+    grid-area: ref;
+}
+
+/* Resume Tables & Alternating Row Colors */
+.resume-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: left;
+    height: 100%;
+}
+
+.resume-table thead .table-banner th {
+    background-color: #000000;
+    color: #00bcd4;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 14px 16px;
+    border-bottom: 2px solid #00bcd4;
+}
+
+.resume-table thead tr:nth-of-type(2) th {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 14px;
+    border-bottom: 1px solid #333333;
+}
+
+.resume-table td {
+    padding: 14px;
+    color: #e0e0e0;
+    border-bottom: 1px solid #2e2e2e;
+    font-size: 0.92rem;
+    vertical-align: top;
+}
+
+.org-sub {
+    color: #00bcd4;
+    font-size: 0.85rem;
+}
+
+/* Alternating Row Colors using nth-of-type() */
+.resume-table tbody tr:nth-of-type(odd) {
+    background-color: #1e1e1e;
+}
+
+.resume-table tbody tr:nth-of-type(even) {
+    background-color: #282828;
+}
+
+.resume-table tbody tr:hover {
+    background-color: #333333;
+    transition: background-color 0.2s ease;
+}
+
+/* Mobile Layout matching Wireframe (Education stacks above Job History) */
+@media (max-width: 768px) {
+    main.resume-wireframe-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "actions"
+            "edu"
+            "jobs"
+            "ref";
+        padding: 0 20px;
+        margin: 25px auto;
+    }
+
+    .resume-wireframe-grid > section {
+        padding: 20px;
+        overflow-x: auto;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #000000;
