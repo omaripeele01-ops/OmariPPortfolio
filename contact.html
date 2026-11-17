@@ -25,41 +25,86 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="contact-wireframe-grid">
+        <!-- Full-Width Page Header Banner -->
+        <section class="contact-header-box">
             <h1>Contact</h1>
-            <p> If you want to connect please use the links below to communciate through traditional channels or social media:</p>
-            <p>Interested in working together? Need additional information? Feel free to reach out using the form below:</p>
+            <p>Interested in working together or need additional information? Connect through my direct channels or send a message using the form below[cite: 6].</p>
         </section>
 
-        <!-- Direct Contact Links -->
+        <!-- Left Column (Desktop) / Top Card (Mobile): Direct Channels -->
         <section class="contact-links-box">
-            <h2>Connect with Me</h2>
-            <p>Follow me on social media</p>
-            <ul>
-                <li><a href="https://twitter.com/omaripeele" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a href="https://linkedin.com/in/omaripeele" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://github.com/omaripeele" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <h2>Direct Channels of Contact</h2>
+            <p class="contact-intro">Reach out directly via phone, email, or professional networks[cite: 6, 7]:</p>
+            
+            <ul class="contact-details-list">
+                <li>
+                    <strong>Phone:</strong>
+                    <a href="tel:555-555-5555">555-555-5555</a>[cite: 7]
+                </li>
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:omari@email.com">omari@email.com</a>[cite: 7]
+                </li>
+                <li>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://linkedin.com/in/omaripeele" target="_blank" rel="noopener noreferrer">linkedin.com/in/omaripeele</a>[cite: 6, 7]
+                </li>
+                <li>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/omaripeele" target="_blank" rel="noopener noreferrer">github.com/omaripeele</a>[cite: 6, 7]
+                </li>
+                <li>
+                    <strong>Twitter / X:</strong>
+                    <a href="https://twitter.com/omaripeele" target="_blank" rel="noopener noreferrer">@omaripeele</a>[cite: 6]
+                </li>
+                <li>
+                    <strong>Office Location:</strong>
+                    <span>Miami-Dade / Broward County, FL</span>[cite: 7]
+                </li>
             </ul>
         </section>
 
-        <!-- Contact Form Section -->
+        <!-- Right Column (Desktop) / Bottom Card (Mobile): Interactive Contact Form -->
         <section class="contact-form-box">
-            <form action="mailto:omari.peele@example.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <h2>Interactive Contact Form</h2>
+            <form action="mailto:omari@email.com" method="post" enctype="text/plain" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required-star">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" minlength="2" required>
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required-star">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="required-star">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 555-555-5555" required>
+                </div>
 
-                <button type="submit">Send</button>
+                <div class="form-group">
+                    <label for="inquiry-type">Project or Inquiry Type <span class="required-star">*</span></label>
+                    <select id="inquiry-type" name="inquiry_type" required>
+                        <option value="" disabled selected>Select a service or topic...</option>
+                        <option value="web-development">Web Development &amp; Front-End Engineering</option>
+                        <option value="ux-ui-design">UX/UI Design &amp; Prototyping</option>
+                        <option value="graphic-design">Graphic Design &amp; Branding</option>
+                        <option value="videography">Videography &amp; Media Production</option>
+                        <option value="general">General / Networking Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message Content <span class="required-star">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, timeline, or question..." minlength="10" required></textarea>
+                </div>
+
+                <button type="submit" class="proposal-btn submit-btn">Send Message</button>
             </form>
         </section>
-        
-
     </main>
 
     <footer>
