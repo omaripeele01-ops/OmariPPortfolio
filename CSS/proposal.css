@@ -1,0 +1,23 @@
+/* proposal.css - page-specific styles */
+
+/* Proposal page content width */
+#container > main {
+    max-width: var(--content-width);
+    margin: 40px auto;
+    padding: 0 var(--page-gutter);
+}
+
+#container > main article {
+    width: 100%;
+}
+
+#container > main article > section {
+    align-items: flex-start;
+    text-align: left;
+}
+
+@media (max-width: 640px) {
+    #container > main {
+        margin: 25px auto;
+    }
+}
