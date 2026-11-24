@@ -14,7 +14,6 @@ main.contact-wireframe-grid {
     width: 100%;
     box-sizing: border-box;
     align-items: stretch;
-    box-shadow: 0 6px 18px rgba(3, 125, 41, 0.3);
 }
 
 .contact-wireframe-grid > section {
@@ -22,7 +21,7 @@ main.contact-wireframe-grid {
     background-color: #1e1e1e;
     border-radius: 8px;
     border: 1px solid #333333;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 18px rgba(3, 125, 41, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
