@@ -1,110 +1,5 @@
 /* resume.css - page-specific styles */
 
-/* Resume Page & Data Tables */
-.resume-section {
-    max-width: var(--content-width);
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-.resume-section h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    font-size: var(--font-page-title);
-    margin-bottom: 12px;
-    color: #00bcd4;
-}
-
-.resume-section p {
-    max-width: 900px;
-    margin-bottom: 25px;
-    color: #e0e0e0;
-    font-size: 1.05rem;
-}
-
-.resume-actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.resume-table-section {
-    max-width: var(--content-width);
-    margin: 0 auto;
-    width: 100%;
-    padding: 30px var(--page-gutter);
-    box-sizing: border-box;
-}
-
-.resume-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    text-align: left;
-}
-
-/* Main Section Banner Row (Education, Job Experience, References) */
-.resume-table thead .table-banner th {
-    background-color: #000000;
-    color: #00bcd4;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 20px 24px;
-    border-bottom: 2px solid #00bcd4;
-}
-
-/* Column Sub-headers */
-.resume-table thead tr:nth-of-type(2) th {
-    background-color: #161616;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 16px 24px;
-    border-bottom: 1px solid #333333;
-}
-
-.resume-table td {
-    padding: 17px 24px;
-    color: #e0e0e0;
-    border-bottom: 1px solid #2e2e2e;
-    font-size: 1.05rem;
-}
-
-/* Alternating Row Colors using nth-of-type() */
-.resume-table tbody tr:nth-of-type(odd) {
-    background-color: #1e1e1e;
-}
-
-.resume-table tbody tr:nth-of-type(even) {
-    background-color: #272727;
-}
-
-.resume-table tbody tr:hover {
-    background-color: #323232;
-    transition: background-color 0.2s ease;
-}
-
-/* Responsive horizontal scroll on small viewports */
-@media (max-width: 768px) {
-    .resume-table-section {
-        padding: 20px;
-        overflow-x: auto;
-    }
-
-    .resume-table {
-        min-width: 650px;
-    }
-}
-
 /* Resume Page Wireframe Grid Layout */
 main.resume-wireframe-grid {
     display: grid;
@@ -158,10 +53,10 @@ main.resume-wireframe-grid {
 
 .resume-actions-box {
     grid-area: actions;
-    flex-direction: row !important;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center !important;
-    align-items: center !important;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
 }
 
@@ -248,7 +143,7 @@ main.resume-wireframe-grid {
     transition: background-color 0.2s ease;
 }
 
-/* Mobile Layout matching Wireframe (Education stacks above Job History) */
+/* Tablet Media Query */
 @media (max-width: 900px) {
     main.resume-wireframe-grid {
         grid-template-columns: 1fr;
@@ -265,5 +160,23 @@ main.resume-wireframe-grid {
     .resume-wireframe-grid > section {
         padding: 24px;
         overflow-x: auto;
+    }
+}
+
+/* Mobile Media Query */
+@media (max-width: 640px) {
+    .resume-actions-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .resume-table {
+        min-width: 540px;
+    }
+
+    .resume-table td,
+    .resume-table thead tr:nth-of-type(2) th {
+        padding: 12px 14px;
+        font-size: 0.95rem;
     }
 }

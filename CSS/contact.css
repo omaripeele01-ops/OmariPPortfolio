@@ -192,7 +192,7 @@ main.contact-wireframe-grid {
     align-self: flex-start;
 }
 
-/* Mobile Responsive Layout matching Wireframe */
+/* Tablet Media Query */
 @media (max-width: 900px) {
     main.contact-wireframe-grid {
         grid-template-columns: 1fr;
@@ -210,5 +210,22 @@ main.contact-wireframe-grid {
 
     .submit-btn {
         width: 100%;
+    }
+}
+
+/* Mobile Media Query */
+@media (max-width: 640px) {
+    .contact-wireframe-grid > section {
+        padding: 20px;
+    }
+
+    .contact-details-list li {
+        padding: 16px 18px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        padding: 13px 14px;
     }
 }

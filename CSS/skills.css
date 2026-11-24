@@ -116,9 +116,14 @@
     color: #ffffff;
 }
 
-/* Responsive: Stack into 1 column on smaller screens */
+/* Mobile Media Query */
 @media (max-width: 768px) {
     .skills-grid-table tbody {
         grid-template-columns: 1fr;
+    }
+
+    .skills-grid-table tbody tr {
+        padding: 24px;
+        min-height: auto;
     }
 }

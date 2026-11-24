@@ -1,1 +1,29 @@
 /* template.css - page-specific styles for template.html */
+
+/* Template Main Content Container */
+main > section {
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 40px auto;
+    padding: var(--card-padding);
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Tablet Media Query */
+@media (max-width: 900px) {
+    main > section {
+        margin: 28px auto;
+        padding: 28px;
+    }
+}
+
+/* Mobile Media Query */
+@media (max-width: 640px) {
+    main > section {
+        margin: 20px auto;
+        padding: 20px;
+    }
+}

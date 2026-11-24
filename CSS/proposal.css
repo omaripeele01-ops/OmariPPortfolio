@@ -9,15 +9,43 @@
 
 #container > main article {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--grid-gap);
+}
+
+#container > main article > header {
+    grid-column: 1 / -1;
 }
 
 #container > main article > section {
     align-items: flex-start;
     text-align: left;
+    justify-content: flex-start;
+    padding: 28px;
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 8px;
 }
 
+/* Tablet Media Query */
+@media (max-width: 900px) {
+    #container > main {
+        margin: 30px auto;
+    }
+
+    #container > main article {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Media Query */
 @media (max-width: 640px) {
     #container > main {
         margin: 25px auto;
+    }
+
+    #container > main article > section {
+        padding: 20px;
     }
 }
