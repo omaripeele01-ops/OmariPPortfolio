@@ -50,6 +50,7 @@
     border: 1px solid #333333;
     margin-bottom: 28px;
     text-align: center;
+    box-shadow: var(--card-shadow);
 }
 
 /* 2x2 Grid for the 4 Category Rows */
@@ -69,15 +70,16 @@
     padding: var(--card-padding);
     border-radius: 8px;
     border: 1px solid #333333;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--card-shadow);
     min-height: 360px;
     box-sizing: border-box;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .skills-grid-table tbody tr:hover {
     transform: translateY(-4px);
     border-color: #00bcd4;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.65), 0 8px 20px rgba(1, 52, 17, 0.9);
 }
 
 /* Alternating Row Colors using nth-of-type() */
@@ -120,10 +122,5 @@
 @media (max-width: 768px) {
     .skills-grid-table tbody {
         grid-template-columns: 1fr;
-    }
-
-    .skills-grid-table tbody tr {
-        padding: 24px;
-        min-height: auto;
     }
 }

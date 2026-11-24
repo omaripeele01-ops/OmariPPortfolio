@@ -28,6 +28,8 @@ body, header, nav, main, footer, section {
     --font-page-title: clamp(2.4rem, 4vw, 3rem);
     --font-section-title: clamp(1.8rem, 3vw, 2.25rem);
     --font-card-title: 1.5rem;
+    --card-shadow: 0 10px 24px rgba(0, 0, 0, 0.55), 0 6px 16px rgba(1, 52, 17, 0.75);
+    --card-shadow-sm: 0 6px 14px rgba(0, 0, 0, 0.45), 0 3px 10px rgba(1, 46, 15, 0.65);
 }
 
 /* Global Styles */
@@ -51,6 +53,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #333333;
+    box-shadow: var(--card-shadow-sm);
 }
 
 header h1 {
@@ -111,12 +114,14 @@ section {
     font-weight: bold;
     font-size: 1.05rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: var(--card-shadow-sm);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .proposal-btn:hover {
     background-color: #ffffff;
     color: #000000;
+    box-shadow: var(--card-shadow);
 }
 
 /* Tablet Media Query */
@@ -125,10 +130,6 @@ section {
         align-items: flex-start;
         flex-direction: column;
         gap: 14px;
-    }
-
-    section {
-        padding: 56px var(--page-gutter);
     }
 }
 
@@ -141,10 +142,6 @@ section {
     nav ul {
         flex-wrap: wrap;
         gap: 10px 18px;
-    }
-
-    section {
-        padding: 40px var(--page-gutter);
     }
 }
 
