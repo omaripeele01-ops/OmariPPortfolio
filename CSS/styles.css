@@ -36,7 +36,8 @@ body {
     font-size: var(--font-base);
     line-height: 1.6;
     color: #ffffff;
-    background-color: linear-gradient(to bottom, #121212, #e2e8f0);
+    background: linear-gradient(to bottom, #121212, #e2e8f0) no-repeat fixed;
+    min-height: 100vh;
 }
 
 /* Header & Navigation Area (Title Left, Nav Right) */
