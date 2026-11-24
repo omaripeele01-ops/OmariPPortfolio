@@ -118,6 +118,7 @@ section {
     color: #000000;
 }
 
+/* Tablet Media Query */
 @media (max-width: 900px) {
     header {
         align-items: flex-start;
@@ -126,6 +127,7 @@ section {
     }
 }
 
+/* Mobile Media Query */
 @media (max-width: 640px) {
     header {
         gap: 12px;
