@@ -26,27 +26,26 @@
 /* Embedded Media Sections */
 #audio-section,
 #video-section {
-    width: 100%;
-    padding: 48px var(--page-gutter);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 48px var(--page-gutter);
     box-sizing: border-box;
 }
 
-#video-section {
-    background-color: #161616;
+#audio-section audio {
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
-    box-shadow: var(--card-shadow);
+#video-section .video-container {
+    margin-inline: auto;
 }
 
 .video-container iframe {
