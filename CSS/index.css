@@ -23,6 +23,16 @@
     font-size: 1.25rem;
 }
 
+/* Embedded Audio Container */
+#audio-section {
+    padding: 72px var(--page-gutter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Bio Section (Blazer Pic Aligned to Left) */
 #bio {
     background-color: #1e1e1e;
@@ -155,6 +165,12 @@
 /* Video Section Style */
 #video-section {
     background-color: #161616;
+    padding: 72px var(--page-gutter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .video-container {
