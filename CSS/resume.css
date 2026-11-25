@@ -45,55 +45,53 @@
     overflow: hidden;
     box-shadow: var(--card-shadow);
     text-align: left;
+    height: 100%;
 }
 
-/* Main Section Banner Row (Education, Job Experience, References) */
 .resume-table thead .table-banner th {
     background-color: #000000;
     color: #00bcd4;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     text-align: center;
-    padding: 20px 24px;
+    padding: 18px 20px;
     border-bottom: 2px solid #00bcd4;
 }
 
-/* Column Sub-headers */
 .resume-table thead tr:nth-of-type(2) th {
-    background-color: #161616;
+    background-color: #141414;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    padding: 16px 24px;
+    padding: 15px 18px;
     border-bottom: 1px solid #333333;
 }
 
 .resume-table td {
-    padding: 17px 24px;
+    padding: 16px 18px;
     color: #e0e0e0;
     border-bottom: 1px solid #2e2e2e;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
+    vertical-align: top;
 }
 
-/* Alternating Row Colors using nth-of-type() */
 .resume-table tbody tr:nth-of-type(odd) {
     background-color: #1e1e1e;
 }
 
 .resume-table tbody tr:nth-of-type(even) {
-    background-color: #272727;
+    background-color: #282828;
 }
 
 .resume-table tbody tr:hover {
-    background-color: #323232;
+    background-color: #333333;
     transition: background-color 0.2s ease;
 }
 
-/* Responsive horizontal scroll on small viewports */
 @media (max-width: 768px) {
     .resume-table-section {
         padding: 20px;
@@ -105,7 +103,6 @@
     }
 }
 
-/* Resume Page Wireframe Grid Layout */
 main.resume-wireframe-grid {
     display: grid;
     grid-template-columns: 1.15fr 1fr;
@@ -122,8 +119,8 @@ main.resume-wireframe-grid {
     align-items: stretch;
 }
 
-/* Override global section centering for resume grid cards */
-.resume-wireframe-grid > section {
+.resume-wireframe-grid > section,
+.resume-wireframe-grid > div {
     padding: var(--card-padding);
     background-color: #1e1e1e;
     border-radius: 8px;
@@ -136,7 +133,6 @@ main.resume-wireframe-grid {
     text-align: left;
 }
 
-/* Grid Area Assignments */
 .resume-header-box {
     grid-area: header;
     justify-content: center;
@@ -188,67 +184,11 @@ main.resume-wireframe-grid {
     grid-area: ref;
 }
 
-/* Resume Tables & Alternating Row Colors */
-.resume-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 6px;
-    overflow: hidden;
-    text-align: left;
-    height: 100%;
-}
-
-.resume-table thead .table-banner th {
-    background-color: #000000;
-    color: #00bcd4;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    font-size: 1.45rem;
-    text-align: center;
-    padding: 18px 20px;
-    border-bottom: 2px solid #00bcd4;
-}
-
-.resume-table thead tr:nth-of-type(2) th {
-    background-color: #141414;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 15px 18px;
-    border-bottom: 1px solid #333333;
-}
-
-.resume-table td {
-    padding: 16px 18px;
-    color: #e0e0e0;
-    border-bottom: 1px solid #2e2e2e;
-    font-size: 1.02rem;
-    vertical-align: top;
-}
-
 .org-sub {
     color: #00bcd4;
     font-size: 0.95rem;
 }
 
-/* Alternating Row Colors using nth-of-type() */
-.resume-table tbody tr:nth-of-type(odd) {
-    background-color: #1e1e1e;
-}
-
-.resume-table tbody tr:nth-of-type(even) {
-    background-color: #282828;
-}
-
-.resume-table tbody tr:hover {
-    background-color: #333333;
-    transition: background-color 0.2s ease;
-}
-
-/* Tablet Media Query */
 @media (max-width: 900px) {
     main.resume-wireframe-grid {
         grid-template-columns: 1fr;
@@ -262,7 +202,8 @@ main.resume-wireframe-grid {
         margin: 25px auto;
     }
 
-    .resume-wireframe-grid > section {
+    .resume-wireframe-grid > section,
+    .resume-wireframe-grid > div {
         padding: 24px;
         overflow-x: auto;
     }
