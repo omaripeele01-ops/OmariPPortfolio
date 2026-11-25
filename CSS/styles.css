@@ -42,6 +42,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header & Navigation Area (Title Left, Nav Right) */
 /* Header & Navigation Area (Title Left, Logo Center, Nav Right) */
 header {
     font-family: 'Inter', sans-serif;
